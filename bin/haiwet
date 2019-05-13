@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require './lib/haiwet'
+Haiwet::CLI.new.call

@@ -1,1 +1,10 @@
-lib/haiwet/cc.rb
+/.bundle/
+/.yardoc/
+/Gemfile.lock/
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/sperc/reports/
+/tmp/
+*.gem

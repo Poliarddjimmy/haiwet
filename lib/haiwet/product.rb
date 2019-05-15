@@ -1,16 +1,15 @@
 class Haiwet::Product
-    attr_accessor :name, :price, :availability, :url, :size
+    attr_accessor :name, :price, :availability
     
     def self.list
+        #return the methed scrape_product
         self.scrape_product
     end
-
+    
+    #scrape data form site https://10kont.com/
     def self.scrape_product
-        self.scrape_10kont
-    end
-
-    def self.scrape_10kont
         doc = Nokogiri::HTML(open('./site/10kont/index.html'))
+        #doc = Nokogiri::HTML(open('https://10kont.com/'))
         #binding.pry
         products = []
         doc.search("div.col-lg-3.col-md-6").each do |prod|

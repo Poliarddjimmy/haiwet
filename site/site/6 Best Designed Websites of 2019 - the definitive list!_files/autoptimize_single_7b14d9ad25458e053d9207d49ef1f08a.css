@@ -1,0 +1,1 @@
+.lazy{opacity:0}.lazy:not(.initial){transition:opacity 1s}img.initial,img.loaded,img.error{opacity:1}img[data-src]:not([data-was-processed=true]),img[data-srcset]:not([data-was-processed=true]){background:#dedede !important;border-color:#dedede !important}
